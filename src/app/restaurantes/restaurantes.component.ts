@@ -14,6 +14,8 @@ export class RestaurantesComponent implements OnInit {
 
   public ofertas!: Oferta[]
 
+  teste: string = 'oi tudo bom'
+
   ngOnInit() {
     this.ofertasService.getOfertasPorCategoria('restaurante')
     .then(( ofertas: any) => {
